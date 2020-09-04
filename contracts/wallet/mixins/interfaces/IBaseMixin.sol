@@ -9,6 +9,8 @@ interface IBaseMixin {
     event Initialized();
     event Spent(uint256 valueInUSD, uint256 timestamp);
 
+    function initialized() external view returns (bool);
+
     function label() external view returns (bytes32);
 
     function nonce() external view returns (uint256);

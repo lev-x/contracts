@@ -129,6 +129,10 @@ abstract contract BaseMixin is IBaseMixin {
         return IPriceFeed(resolveENS(keccak256(abi.encodePacked("price-feed-v0"))));
     }
 
+    function initialized() public override view returns (bool) {
+        return _initialized;
+    }
+
     function label() public override view returns (bytes32) {
         return _storage.label();
     }

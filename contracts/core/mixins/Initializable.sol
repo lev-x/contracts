@@ -5,7 +5,7 @@
 pragma solidity ^0.6.8;
 
 contract Initializable {
-    bool private initialized;
+    bool public initialized;
 
     bool private initializing;
 

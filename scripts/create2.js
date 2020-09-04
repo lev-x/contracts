@@ -25,7 +25,7 @@ module.exports = async ({
   replacement,
   updateENS,
 }) => {
-  const {create2, execute} = deployments;
+  const {create2, read, execute} = deployments;
 
   const {deploy} = await create2(contract, {
     from: deployer,
@@ -36,8 +36,9 @@ module.exports = async ({
     skipIfAlreadyDeployed: true,
   });
   const deployResult = await deploy();
-  if (deployResult.newlyDeployed) {
-    if (initArgs && initArgs.length > 0) {
+  if (initArgs && initArgs.length > 0) {
+    const initialized = await read(contract, {from: deployer}, "initialized");
+    if (!initialized) {
       await execute(
         contract,
         {
@@ -48,6 +49,8 @@ module.exports = async ({
         ...initArgs
       );
     }
+  }
+  if (deployResult.newlyDeployed) {
     if (updateENS) {
       await approveENSGateway();
 
