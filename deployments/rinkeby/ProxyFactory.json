@@ -1,0 +1,176 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "proxy",
+          "type": "address"
+        }
+      ],
+      "name": "ProxyCreated",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "salt",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "initializeData",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signature",
+          "type": "bytes"
+        }
+      ],
+      "name": "createProxy",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "salt",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "initializeData",
+          "type": "bytes"
+        }
+      ],
+      "name": "createProxyHash",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "isProxy",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "receipt": {
+    "to": "0x4e59b44847b379578588920cA78FbF26c0B4956C",
+    "from": "0x5b8C253517b6Bd003369173109693B01cb6841B5",
+    "contractAddress": null,
+    "transactionIndex": 8,
+    "gasUsed": "651911",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x29cd94534ff38c8f3a3dd9f25efbe8cdcb6036f49719b2c487e1079fd2febbdf",
+    "transactionHash": "0x3d8114ddb72cba903e14a9246400e05baba386148d0160a23baea2eb300f0108",
+    "logs": [],
+    "blockNumber": 7137733,
+    "cumulativeGasUsed": "2010077",
+    "status": 1,
+    "byzantium": true
+  },
+  "address": "0xe9bc2800635415333418ccc1f5ff2f4d6960c68e",
+  "args": [],
+  "solcInputHash": "0x0ba34002262c75f24ebbcd47c2a71ec7f5830be3e50c097a446a7d66537a7b5a",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.8+commit.0bbfe453\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"implementation\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"proxy\",\"type\":\"address\"}],\"name\":\"ProxyCreated\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"implementation\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"salt\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"initializeData\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"signature\",\"type\":\"bytes\"}],\"name\":\"createProxy\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"addr\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"implementation\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"salt\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"initializeData\",\"type\":\"bytes\"}],\"name\":\"createProxyHash\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"isProxy\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/proxy/ProxyFactory.sol\":\"ProxyFactory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/cryptography/ECDSA.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.6.0;\\n\\n/**\\n * @dev Elliptic Curve Digital Signature Algorithm (ECDSA) operations.\\n *\\n * These functions can be used to verify that a message was signed by the holder\\n * of the private keys of a given address.\\n */\\nlibrary ECDSA {\\n    /**\\n     * @dev Returns the address that signed a hashed message (`hash`) with\\n     * `signature`. This address can then be used for verification purposes.\\n     *\\n     * The `ecrecover` EVM opcode allows for malleable (non-unique) signatures:\\n     * this function rejects them by requiring the `s` value to be in the lower\\n     * half order, and the `v` value to be either 27 or 28.\\n     *\\n     * IMPORTANT: `hash` _must_ be the result of a hash operation for the\\n     * verification to be secure: it is possible to craft signatures that\\n     * recover to arbitrary addresses for non-hashed data. A safe way to ensure\\n     * this is by receiving a hash of the original message (which may otherwise\\n     * be too long), and then calling {toEthSignedMessageHash} on it.\\n     */\\n    function recover(bytes32 hash, bytes memory signature) internal pure returns (address) {\\n        // Check the signature length\\n        if (signature.length != 65) {\\n            revert(\\\"ECDSA: invalid signature length\\\");\\n        }\\n\\n        // Divide the signature in r, s and v variables\\n        bytes32 r;\\n        bytes32 s;\\n        uint8 v;\\n\\n        // ecrecover takes the signature parameters, and the only way to get them\\n        // currently is to use assembly.\\n        // solhint-disable-next-line no-inline-assembly\\n        assembly {\\n            r := mload(add(signature, 0x20))\\n            s := mload(add(signature, 0x40))\\n            v := byte(0, mload(add(signature, 0x60)))\\n        }\\n\\n        // EIP-2 still allows signature malleability for ecrecover(). Remove this possibility and make the signature\\n        // unique. Appendix F in the Ethereum Yellow paper (https://ethereum.github.io/yellowpaper/paper.pdf), defines\\n        // the valid range for s in (281): 0 < s < secp256k1n \\u00f7 2 + 1, and for v in (282): v \\u2208 {27, 28}. Most\\n        // signatures from current libraries generate a unique signature with an s-value in the lower half order.\\n        //\\n        // If your library generates malleable signatures, such as s-values in the upper range, calculate a new s-value\\n        // with 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141 - s1 and flip v from 27 to 28 or\\n        // vice versa. If your library also generates signatures with 0/1 for v instead 27/28, add 27 to v to accept\\n        // these malleable signatures as well.\\n        if (uint256(s) > 0x7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5D576E7357A4501DDFE92F46681B20A0) {\\n            revert(\\\"ECDSA: invalid signature 's' value\\\");\\n        }\\n\\n        if (v != 27 && v != 28) {\\n            revert(\\\"ECDSA: invalid signature 'v' value\\\");\\n        }\\n\\n        // If the signature is valid (and not malleable), return the signer address\\n        address signer = ecrecover(hash, v, r, s);\\n        require(signer != address(0), \\\"ECDSA: invalid signature\\\");\\n\\n        return signer;\\n    }\\n\\n    /**\\n     * @dev Returns an Ethereum Signed Message, created from a `hash`. This\\n     * replicates the behavior of the\\n     * https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_sign[`eth_sign`]\\n     * JSON-RPC method.\\n     *\\n     * See {recover}.\\n     */\\n    function toEthSignedMessageHash(bytes32 hash) internal pure returns (bytes32) {\\n        // 32 is the length in bytes of hash,\\n        // enforced by the type signature above\\n        return keccak256(abi.encodePacked(\\\"\\\\x19Ethereum Signed Message:\\\\n32\\\", hash));\\n    }\\n}\\n\",\"keccak256\":\"0x1efcb1ccef6b3bce65467c4b704cec8d0582e35ff48352269ba8cda4b54ae3da\",\"license\":\"MIT\"},\"contracts/proxy/Proxy.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.6.8;\\n\\n/**\\n * @notice Implements https://eips.ethereum.org/EIPS/eip-1822\\n * EIP-1822: Universal Upgradeable Proxy Standard (UUPS)\\n */\\ncontract Proxy {\\n    event ETHReceived(address indexed sender, uint256 indexed value);\\n\\n    // keccak256(\\\"PROXIABLE\\\") = 0xc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf7\\n    bytes32\\n        private constant UUID = 0xc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf7;\\n\\n    constructor(address implementation) public {\\n        assembly {\\n            sstore(UUID, implementation)\\n        }\\n    }\\n\\n    receive() external payable {\\n        emit ETHReceived(msg.sender, msg.value);\\n    }\\n\\n    fallback() external payable {\\n        assembly {\\n            let impl := sload(UUID)\\n            calldatacopy(0x0, 0x0, calldatasize())\\n            let result := delegatecall(gas(), impl, 0, calldatasize(), 0, 0)\\n            returndatacopy(0, 0, returndatasize())\\n            switch result\\n                case 0 {\\n                    revert(0, returndatasize())\\n                }\\n                default {\\n                    return(0, returndatasize())\\n                }\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0xfc383c0557f5d120c287a7af776297eb4dbb59b170a0d7968ab56a7fd5b233e3\",\"license\":\"MIT\"},\"contracts/proxy/ProxyFactory.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.6.8;\\n\\nimport \\\"@openzeppelin/contracts/cryptography/ECDSA.sol\\\";\\n\\nimport \\\"./Proxy.sol\\\";\\n\\ncontract ProxyFactory {\\n    using ECDSA for bytes32;\\n\\n    mapping(address => bool) private _proxies;\\n\\n    event ProxyCreated(address indexed implementation, address proxy);\\n\\n    function isProxy(address addr) public view returns (bool) {\\n        return _proxies[addr];\\n    }\\n\\n    function createProxy(\\n        address implementation,\\n        bytes32 salt,\\n        bytes memory initializeData,\\n        bytes memory signature\\n    ) public returns (address payable addr) {\\n        require(_proxies[addr] == false, \\\"proxy-already-created\\\");\\n        _proxies[addr] = true;\\n\\n        address signer = createProxyHash(implementation, salt, initializeData)\\n            .toEthSignedMessageHash()\\n            .recover(signature);\\n        bytes32 signerSalt = keccak256(abi.encodePacked(signer, salt));\\n        bytes memory code = abi.encodePacked(type(Proxy).creationCode, abi.encode(implementation));\\n        assembly {\\n            addr := create2(0, add(code, 0x20), mload(code), signerSalt)\\n            if iszero(extcodesize(addr)) {\\n                revert(0, 0)\\n            }\\n        }\\n\\n        // solhint-disable-next-line avoid-low-level-calls\\n        (bool success, ) = addr.call(initializeData);\\n        require(success, \\\"failed-to-initialize\\\");\\n\\n        emit ProxyCreated(implementation, addr);\\n    }\\n\\n    function createProxyHash(\\n        address implementation,\\n        bytes32 salt,\\n        bytes memory initializeData\\n    ) public view returns (bytes32) {\\n        return\\n            keccak256(\\n                abi.encodePacked(\\n                    bytes1(0x19),\\n                    bytes1(0),\\n                    address(this),\\n                    this.createProxy.selector,\\n                    implementation,\\n                    salt,\\n                    initializeData\\n                )\\n            );\\n    }\\n}\\n\",\"keccak256\":\"0xa0dcc9b7caa133abb6a2a8b5e6a1a74acc7c28d1e7a1b3b9735913b14fb7f7b6\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610ace806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80631c3e04da1461004657806329710388146101a4578063aa232725146101de575b600080fd5b6101886004803603608081101561005c57600080fd5b6001600160a01b038235169160208101359181019060608101604082013564010000000081111561008c57600080fd5b82018360208201111561009e57600080fd5b803590602001918460018302840111640100000000831117156100c057600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250929594936020810193503591505064010000000081111561011357600080fd5b82018360208201111561012557600080fd5b8035906020019184600183028401116401000000008311171561014757600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506102ab945050505050565b604080516001600160a01b039092168252519081900360200190f35b6101ca600480360360208110156101ba57600080fd5b50356001600160a01b0316610600565b604080519115158252519081900360200190f35b610299600480360360608110156101f457600080fd5b6001600160a01b038235169160208101359181019060608101604082013564010000000081111561022457600080fd5b82018360208201111561023657600080fd5b8035906020019184600183028401116401000000008311171561025857600080fd5b91908080601f01602080910402602001604051908101604052809392919081815260200183838082843760009201919091525092955061061e945050505050565b60408051918252519081900360200190f35b600080805260208190527fad3228b676f7d3cd4284a5443f17f1962b36e491b30a40b2405849e597ba5fb55460ff1615610324576040805162461bcd60e51b81526020600482015260156024820152741c1c9bde1e4b585b1c9958591e4b58dc99585d1959605a1b604482015290519081900360640190fd5b6001600160a01b0381166000908152602081905260408120805460ff1916600117905561036a8361035e61035989898961061e565b6106f8565b9063ffffffff61074916565b90506000818660405160200180836001600160a01b03166001600160a01b031660601b8152601401828152602001925050506040516020818303038152906040528051906020012090506060604051806020016103c690610930565b601f1982820381018352601f9091011660408181526001600160a01b038b16602083810191909152815180840382018152828401909252835191926060019182918501908083835b6020831061042d5780518252601f19909201916020918201910161040e565b51815160209384036101000a600019018019909216911617905285519190930192850191508083835b602083106104755780518252601f199092019160209182019101610456565b6001836020036101000a038019825116818451168082178552505050505050905001925050506040516020818303038152906040529050818151602083016000f59350833b6104c357600080fd5b6000846001600160a01b0316876040518082805190602001908083835b602083106104ff5780518252601f1990920191602091820191016104e0565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d8060008114610561576040519150601f19603f3d011682016040523d82523d6000602084013e610566565b606091505b50509050806105b3576040805162461bcd60e51b81526020600482015260146024820152736661696c65642d746f2d696e697469616c697a6560601b604482015290519081900360640190fd5b604080516001600160a01b0387811682529151918b16917f9678a1e87ca9f1a37dc659a97b39d812d98cd236947e1b53b3d0d6fd346acb6e9181900360200190a250505050949350505050565b6001600160a01b031660009081526020819052604090205460ff1690565b604051601960f81b602080830182815260006021850181905230606081811b6022880152630e1f026d60e11b60368801819052908a901b6bffffffffffffffffffffffff1916603a880152604e8701899052875192968795929491938b938b938b939092606e909101918401908083835b602083106106ae5780518252601f19909201916020918201910161068f565b6001836020036101000a0380198251168184511680821785525050505050509050019750505050505050506040516020818303038152906040528051906020012090509392505050565b604080517f19457468657265756d205369676e6564204d6573736167653a0a333200000000602080830191909152603c8083019490945282518083039094018452605c909101909152815191012090565b600081516041146107a1576040805162461bcd60e51b815260206004820152601f60248201527f45434453413a20696e76616c6964207369676e6174757265206c656e67746800604482015290519081900360640190fd5b60208201516040830151606084015160001a7f7fffffffffffffffffffffffffffffff5d576e7357a4501ddfe92f46681b20a08211156108125760405162461bcd60e51b8152600401808060200182810382526022815260200180610a556022913960400191505060405180910390fd5b8060ff16601b1415801561082a57508060ff16601c14155b156108665760405162461bcd60e51b8152600401808060200182810382526022815260200180610a776022913960400191505060405180910390fd5b60408051600080825260208083018085528a905260ff85168385015260608301879052608083018690529251909260019260a080820193601f1981019281900390910190855afa1580156108be573d6000803e3d6000fd5b5050604051601f1901519150506001600160a01b038116610926576040805162461bcd60e51b815260206004820152601860248201527f45434453413a20696e76616c6964207369676e61747572650000000000000000604482015290519081900360640190fd5b9695505050505050565b6101178061093e8339019056fe608060405234801561001057600080fd5b506040516101173803806101178339818101604052602081101561003357600080fd5b50517fc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf75560b2806100656000396000f3fe608060405236603757604051349033907fbfe611b001dfcd411432f7bf0d79b82b4b2ee81511edac123a3403c357fb972a90600090a3005b7fc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf7543660008037600080366000845af43d6000803e8080156077573d6000f35b3d6000fdfea26469706673582212202c7e65c55640ebb8e63f515bdcbff3ec91a0709c5585431377ee8bf4a7774b3d64736f6c6343000608003345434453413a20696e76616c6964207369676e6174757265202773272076616c756545434453413a20696e76616c6964207369676e6174757265202776272076616c7565a2646970667358221220a77d7af35895ce6e3be35ca3ac80266e6a20018883091c3ca49d27747d9a5ad664736f6c63430006080033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80631c3e04da1461004657806329710388146101a4578063aa232725146101de575b600080fd5b6101886004803603608081101561005c57600080fd5b6001600160a01b038235169160208101359181019060608101604082013564010000000081111561008c57600080fd5b82018360208201111561009e57600080fd5b803590602001918460018302840111640100000000831117156100c057600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250929594936020810193503591505064010000000081111561011357600080fd5b82018360208201111561012557600080fd5b8035906020019184600183028401116401000000008311171561014757600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506102ab945050505050565b604080516001600160a01b039092168252519081900360200190f35b6101ca600480360360208110156101ba57600080fd5b50356001600160a01b0316610600565b604080519115158252519081900360200190f35b610299600480360360608110156101f457600080fd5b6001600160a01b038235169160208101359181019060608101604082013564010000000081111561022457600080fd5b82018360208201111561023657600080fd5b8035906020019184600183028401116401000000008311171561025857600080fd5b91908080601f01602080910402602001604051908101604052809392919081815260200183838082843760009201919091525092955061061e945050505050565b60408051918252519081900360200190f35b600080805260208190527fad3228b676f7d3cd4284a5443f17f1962b36e491b30a40b2405849e597ba5fb55460ff1615610324576040805162461bcd60e51b81526020600482015260156024820152741c1c9bde1e4b585b1c9958591e4b58dc99585d1959605a1b604482015290519081900360640190fd5b6001600160a01b0381166000908152602081905260408120805460ff1916600117905561036a8361035e61035989898961061e565b6106f8565b9063ffffffff61074916565b90506000818660405160200180836001600160a01b03166001600160a01b031660601b8152601401828152602001925050506040516020818303038152906040528051906020012090506060604051806020016103c690610930565b601f1982820381018352601f9091011660408181526001600160a01b038b16602083810191909152815180840382018152828401909252835191926060019182918501908083835b6020831061042d5780518252601f19909201916020918201910161040e565b51815160209384036101000a600019018019909216911617905285519190930192850191508083835b602083106104755780518252601f199092019160209182019101610456565b6001836020036101000a038019825116818451168082178552505050505050905001925050506040516020818303038152906040529050818151602083016000f59350833b6104c357600080fd5b6000846001600160a01b0316876040518082805190602001908083835b602083106104ff5780518252601f1990920191602091820191016104e0565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d8060008114610561576040519150601f19603f3d011682016040523d82523d6000602084013e610566565b606091505b50509050806105b3576040805162461bcd60e51b81526020600482015260146024820152736661696c65642d746f2d696e697469616c697a6560601b604482015290519081900360640190fd5b604080516001600160a01b0387811682529151918b16917f9678a1e87ca9f1a37dc659a97b39d812d98cd236947e1b53b3d0d6fd346acb6e9181900360200190a250505050949350505050565b6001600160a01b031660009081526020819052604090205460ff1690565b604051601960f81b602080830182815260006021850181905230606081811b6022880152630e1f026d60e11b60368801819052908a901b6bffffffffffffffffffffffff1916603a880152604e8701899052875192968795929491938b938b938b939092606e909101918401908083835b602083106106ae5780518252601f19909201916020918201910161068f565b6001836020036101000a0380198251168184511680821785525050505050509050019750505050505050506040516020818303038152906040528051906020012090509392505050565b604080517f19457468657265756d205369676e6564204d6573736167653a0a333200000000602080830191909152603c8083019490945282518083039094018452605c909101909152815191012090565b600081516041146107a1576040805162461bcd60e51b815260206004820152601f60248201527f45434453413a20696e76616c6964207369676e6174757265206c656e67746800604482015290519081900360640190fd5b60208201516040830151606084015160001a7f7fffffffffffffffffffffffffffffff5d576e7357a4501ddfe92f46681b20a08211156108125760405162461bcd60e51b8152600401808060200182810382526022815260200180610a556022913960400191505060405180910390fd5b8060ff16601b1415801561082a57508060ff16601c14155b156108665760405162461bcd60e51b8152600401808060200182810382526022815260200180610a776022913960400191505060405180910390fd5b60408051600080825260208083018085528a905260ff85168385015260608301879052608083018690529251909260019260a080820193601f1981019281900390910190855afa1580156108be573d6000803e3d6000fd5b5050604051601f1901519150506001600160a01b038116610926576040805162461bcd60e51b815260206004820152601860248201527f45434453413a20696e76616c6964207369676e61747572650000000000000000604482015290519081900360640190fd5b9695505050505050565b6101178061093e8339019056fe608060405234801561001057600080fd5b506040516101173803806101178339818101604052602081101561003357600080fd5b50517fc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf75560b2806100656000396000f3fe608060405236603757604051349033907fbfe611b001dfcd411432f7bf0d79b82b4b2ee81511edac123a3403c357fb972a90600090a3005b7fc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf7543660008037600080366000845af43d6000803e8080156077573d6000f35b3d6000fdfea26469706673582212202c7e65c55640ebb8e63f515bdcbff3ec91a0709c5585431377ee8bf4a7774b3d64736f6c6343000608003345434453413a20696e76616c6964207369676e6174757265202773272076616c756545434453413a20696e76616c6964207369676e6174757265202776272076616c7565a2646970667358221220a77d7af35895ce6e3be35ca3ac80266e6a20018883091c3ca49d27747d9a5ad664736f6c63430006080033",
+  "libraries": {},
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 4154,
+        "contract": "contracts/proxy/ProxyFactory.sol:ProxyFactory",
+        "label": "_proxies",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_address,t_bool)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      }
+    }
+  },
+  "gasEstimates": {
+    "creation": {
+      "codeDepositCost": "553200",
+      "executionCost": "587",
+      "totalCost": "553787"
+    },
+    "external": {
+      "createProxy(address,bytes32,bytes,bytes)": "infinite",
+      "createProxyHash(address,bytes32,bytes)": "infinite",
+      "isProxy(address)": "1157"
+    }
+  }
+}

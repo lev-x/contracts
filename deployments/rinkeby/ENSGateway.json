@@ -1,0 +1,346 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "label",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "SubdomainRegistered",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "ens",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "initialized",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "label",
+          "type": "bytes32"
+        }
+      ],
+      "name": "ownerOfSubdomain",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "label",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "registerSubdomain",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "resolver",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "label",
+          "type": "bytes32"
+        }
+      ],
+      "name": "resolverOfSubdomain",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "setTLDOwner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "label",
+          "type": "bytes32"
+        }
+      ],
+      "name": "subdomainNode",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "tld",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "tldNode",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "receipt": {
+    "to": "0x4e59b44847b379578588920cA78FbF26c0B4956C",
+    "from": "0x5b8C253517b6Bd003369173109693B01cb6841B5",
+    "contractAddress": null,
+    "transactionIndex": 9,
+    "gasUsed": "701086",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x1563e908f30c86f2475bc8dca1b3e8566944ea4c8514baa6a54f55d11bc745f2",
+    "transactionHash": "0x2bd96dd9e613d11f061550c84ff43f3096775078993f63ef84aaa8417fd873cd",
+    "logs": [],
+    "blockNumber": 7136656,
+    "cumulativeGasUsed": "1496247",
+    "status": 1,
+    "byzantium": true
+  },
+  "address": "0x1b8eecacfeb072b44306d17a2f5138afa84196e8",
+  "args": [],
+  "solcInputHash": "0x0ba34002262c75f24ebbcd47c2a71ec7f5830be3e50c097a446a7d66537a7b5a",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.8+commit.0bbfe453\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"label\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"SubdomainRegistered\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"ens\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"initialized\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"label\",\"type\":\"bytes32\"}],\"name\":\"ownerOfSubdomain\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"label\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"registerSubdomain\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"resolver\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"label\",\"type\":\"bytes32\"}],\"name\":\"resolverOfSubdomain\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"setTLDOwner\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"label\",\"type\":\"bytes32\"}],\"name\":\"subdomainNode\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"tld\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"tldNode\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/core/ENSGateway.sol\":\"ENSGateway\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@ensdomains/ens/contracts/ENS.sol\":{\"content\":\"pragma solidity >=0.4.24;\\n\\ninterface ENS {\\n\\n    // Logged when the owner of a node assigns a new owner to a subnode.\\n    event NewOwner(bytes32 indexed node, bytes32 indexed label, address owner);\\n\\n    // Logged when the owner of a node transfers ownership to a new account.\\n    event Transfer(bytes32 indexed node, address owner);\\n\\n    // Logged when the resolver for a node changes.\\n    event NewResolver(bytes32 indexed node, address resolver);\\n\\n    // Logged when the TTL of a node changes\\n    event NewTTL(bytes32 indexed node, uint64 ttl);\\n\\n    // Logged when an operator is added or removed.\\n    event ApprovalForAll(address indexed owner, address indexed operator, bool approved);\\n\\n    function setRecord(bytes32 node, address owner, address resolver, uint64 ttl) external;\\n    function setSubnodeRecord(bytes32 node, bytes32 label, address owner, address resolver, uint64 ttl) external;\\n    function setSubnodeOwner(bytes32 node, bytes32 label, address owner) external returns(bytes32);\\n    function setResolver(bytes32 node, address resolver) external;\\n    function setOwner(bytes32 node, address owner) external;\\n    function setTTL(bytes32 node, uint64 ttl) external;\\n    function setApprovalForAll(address operator, bool approved) external;\\n    function owner(bytes32 node) external view returns (address);\\n    function resolver(bytes32 node) external view returns (address);\\n    function ttl(bytes32 node) external view returns (uint64);\\n    function recordExists(bytes32 node) external view returns (bool);\\n    function isApprovedForAll(address owner, address operator) external view returns (bool);\\n}\\n\",\"keccak256\":\"0x10b88673d8c180cd62523be4fec7607c65594eb4f0c561fa0fbc0784422b4871\"},\"@ensdomains/resolver/contracts/Resolver.sol\":{\"content\":\"pragma solidity >=0.4.25;\\npragma experimental ABIEncoderV2;\\n\\n/**\\n * A generic resolver interface which includes all the functions including the ones deprecated\\n */\\ninterface Resolver{\\n    event AddrChanged(bytes32 indexed node, address a);\\n    event AddressChanged(bytes32 indexed node, uint coinType, bytes newAddress);\\n    event NameChanged(bytes32 indexed node, string name);\\n    event ABIChanged(bytes32 indexed node, uint256 indexed contentType);\\n    event PubkeyChanged(bytes32 indexed node, bytes32 x, bytes32 y);\\n    event TextChanged(bytes32 indexed node, string indexed indexedKey, string key);\\n    event ContenthashChanged(bytes32 indexed node, bytes hash);\\n    /* Deprecated events */\\n    event ContentChanged(bytes32 indexed node, bytes32 hash);\\n\\n    function ABI(bytes32 node, uint256 contentTypes) external view returns (uint256, bytes memory);\\n    function addr(bytes32 node) external view returns (address);\\n    function addr(bytes32 node, uint coinType) external view returns(bytes memory);\\n    function contenthash(bytes32 node) external view returns (bytes memory);\\n    function dnsrr(bytes32 node) external view returns (bytes memory);\\n    function name(bytes32 node) external view returns (string memory);\\n    function pubkey(bytes32 node) external view returns (bytes32 x, bytes32 y);\\n    function text(bytes32 node, string calldata key) external view returns (string memory);\\n    function interfaceImplementer(bytes32 node, bytes4 interfaceID) external view returns (address);\\n    function setABI(bytes32 node, uint256 contentType, bytes calldata data) external;\\n    function setAddr(bytes32 node, address addr) external;\\n    function setAddr(bytes32 node, uint coinType, bytes calldata a) external;\\n    function setContenthash(bytes32 node, bytes calldata hash) external;\\n    function setDnsrr(bytes32 node, bytes calldata data) external;\\n    function setName(bytes32 node, string calldata _name) external;\\n    function setPubkey(bytes32 node, bytes32 x, bytes32 y) external;\\n    function setText(bytes32 node, string calldata key, string calldata value) external;\\n    function setInterface(bytes32 node, bytes4 interfaceID, address implementer) external;\\n    function supportsInterface(bytes4 interfaceID) external pure returns (bool);\\n    function multicall(bytes[] calldata data) external returns(bytes[] memory results);\\n\\n    /* Deprecated functions */\\n    function content(bytes32 node) external view returns (bytes32);\\n    function multihash(bytes32 node) external view returns (bytes memory);\\n    function setContent(bytes32 node, bytes32 hash) external;\\n    function setMultihash(bytes32 node, bytes calldata hash) external;\\n}\\n\",\"keccak256\":\"0xb992c6a78066be42d7e9b54d0e385e87267d7e229099ed6c857c9d9ace43995d\"},\"contracts/core/ENSGateway.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.6.8;\\n\\nimport \\\"@ensdomains/ens/contracts/ENS.sol\\\";\\nimport \\\"@ensdomains/resolver/contracts/Resolver.sol\\\";\\n\\nimport \\\"./mixins/Initializable.sol\\\";\\nimport \\\"./mixins/Ownable.sol\\\";\\nimport \\\"./interfaces/IENSGateway.sol\\\";\\nimport \\\"./interfaces/IENSReverseRegistrar.sol\\\";\\n\\ncontract ENSGateway is Initializable, Ownable, IENSGateway {\\n    address private _resolver;\\n\\n    function initialize(address owner) public initializer {\\n        _initialize(owner);\\n        _resolver = ENS(ens()).resolver(tldNode());\\n        require(_resolver != address(0), \\\"resolver-not-set\\\");\\n    }\\n\\n    function setTLDOwner(address newOwner) public onlyOwner {\\n        ENS(ens()).setOwner(tldNode(), newOwner);\\n    }\\n\\n    function ens() public override view returns (address) {\\n        return 0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e;\\n    }\\n\\n    function resolver() public override view returns (address) {\\n        return _resolver;\\n    }\\n\\n    function tld() public override view returns (string memory) {\\n        return \\\"levx.eth\\\";\\n    }\\n\\n    // namehash(\\\"levx.eth\\\")\\n    function tldNode() public override view returns (bytes32) {\\n        return 0xf88903d82aebfe9a5fa03a1a6eb4475330ed9991c9b6ffea0f6d0154a210efbe;\\n    }\\n\\n    function subdomainNode(bytes32 label) public override view returns (bytes32) {\\n        return keccak256(abi.encodePacked(tldNode(), label));\\n    }\\n\\n    function ownerOfSubdomain(bytes32 label) public override view returns (address) {\\n        return ENS(ens()).owner(subdomainNode(label));\\n    }\\n\\n    function resolverOfSubdomain(bytes32 label) public override view returns (address) {\\n        return ENS(ens()).resolver(subdomainNode(label));\\n    }\\n\\n    function registerSubdomain(bytes32 label, address addr) public override {\\n        require(label != bytes32(0), \\\"invalid-label\\\");\\n        require(addr != address(0), \\\"invalid-addr\\\");\\n        require(ownerOfSubdomain(label) == address(0), \\\"already-registered\\\");\\n\\n        ENS(ens()).setSubnodeRecord(tldNode(), label, address(this), _resolver, 0);\\n        Resolver(_resolver).setAddr(subdomainNode(label), addr);\\n\\n        ENS(ens()).setSubnodeOwner(tldNode(), label, msg.sender);\\n\\n        emit SubdomainRegistered(label, msg.sender, addr);\\n    }\\n}\\n\",\"keccak256\":\"0xb31b4144303acef314076eca7b437a7470156bcc27de37b49d6f7b5ede9c9caf\",\"license\":\"MIT\"},\"contracts/core/interfaces/IENSGateway.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity >=0.6.0;\\n\\ninterface IENSGateway {\\n    event SubdomainRegistered(bytes32 indexed label, address owner, address addr);\\n\\n    function ens() external view returns (address);\\n\\n    function resolver() external view returns (address);\\n\\n    function tld() external view returns (string memory);\\n\\n    function tldNode() external view returns (bytes32);\\n\\n    function subdomainNode(bytes32 label) external view returns (bytes32);\\n\\n    function ownerOfSubdomain(bytes32 label) external view returns (address);\\n\\n    function resolverOfSubdomain(bytes32 label) external view returns (address);\\n\\n    function registerSubdomain(bytes32 label, address addr) external;\\n}\\n\",\"keccak256\":\"0xa79b5499ba2ca81d3dd1e6fa32598e242c0aa941a1b076f075b2ecb41de0ad03\",\"license\":\"MIT\"},\"contracts/core/interfaces/IENSReverseRegistrar.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity >=0.6.0;\\n\\ninterface IENSReverseRegistrar {\\n    function ens() external view returns (address);\\n\\n    function defaultResolver() external view returns (address);\\n\\n    function claim(address owner) external returns (bytes32);\\n\\n    function claimWithResolver(address owner, address resolver) external returns (bytes32);\\n\\n    function setName(string calldata name) external returns (bytes32);\\n\\n    function node(address addr) external pure returns (bytes32);\\n}\\n\",\"keccak256\":\"0x8ffb96fda5ee5426a77f8573dd7954b30e5cfe461c9283423a27417afe2486ea\",\"license\":\"MIT\"},\"contracts/core/mixins/Initializable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// solhint-disable-next-line max-line-length\\n// https://github.com/OpenZeppelin/openzeppelin-sdk/blob/master/packages/lib/contracts/Initializable.sol\\n\\npragma solidity ^0.6.8;\\n\\ncontract Initializable {\\n    bool public initialized;\\n\\n    bool private initializing;\\n\\n    modifier initializer() {\\n        require(initializing || !initialized, \\\"already-initialized\\\");\\n\\n        bool isTopLevelCall = !initializing;\\n        if (isTopLevelCall) {\\n            initializing = true;\\n            initialized = true;\\n        }\\n\\n        _;\\n\\n        if (isTopLevelCall) {\\n            initializing = false;\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x0b5b5095ed3cf49499c5aa347ac6f85fd59671a365fcff8ff5cc1b931cc2aa3e\",\"license\":\"MIT\"},\"contracts/core/mixins/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// solhint-disable-next-line max-line-length\\n// https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol\\n\\npragma solidity ^0.6.8;\\n\\nabstract contract Ownable {\\n    address private _owner;\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    modifier onlyOwner {\\n        require(_owner == msg.sender, \\\"msg-sender-not-owner\\\");\\n        _;\\n    }\\n\\n    function _initialize(address owner) internal {\\n        _owner = owner;\\n    }\\n\\n    function owner() public view returns (address) {\\n        return _owner;\\n    }\\n\\n    function transferOwnership(address newOwner) public onlyOwner {\\n        require(newOwner != address(0), \\\"invalid-address\\\");\\n        emit OwnershipTransferred(_owner, newOwner);\\n        _owner = newOwner;\\n    }\\n\\n    function renounceOwnership() public onlyOwner {\\n        emit OwnershipTransferred(_owner, address(0));\\n        _owner = address(0);\\n    }\\n}\\n\",\"keccak256\":\"0xc58654e11c329f18f62f16502e435d58971d980a53a5c356be4d08538c13898c\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610bb1806100206000396000f3fe608060405234801561001057600080fd5b50600436106100ea5760003560e01c8063715018a61161008c578063c4d66de811610066578063c4d66de814610240578063da512b2314610266578063f2fde38b14610283578063f9b94a9a146102a9576100ea565b8063715018a6146102135780638da5cb5b1461021b578063bec7923214610223576100ea565b80632d551432116100c85780632d551432146101495780633f15457f146101c657806357a102ed146101ce5780635acbbc1d146101f6576100ea565b806304f3bcec146100ef578063114902c514610113578063158ef93e1461012d575b600080fd5b6100f76102d5565b604080516001600160a01b039092168252519081900360200190f35b61011b6102e4565b60408051918252519081900360200190f35b610135610308565b604080519115158252519081900360200190f35b610151610311565b6040805160208082528351818301528351919283929083019185019080838360005b8381101561018b578181015183820152602001610173565b50505050905090810190601f1680156101b85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100f7610333565b6101f4600480360360208110156101e457600080fd5b50356001600160a01b0316610346565b005b6100f76004803603602081101561020c57600080fd5b503561042b565b6101f46104b2565b6100f761055f565b61011b6004803603602081101561023957600080fd5b5035610574565b6101f46004803603602081101561025657600080fd5b50356001600160a01b03166105b3565b6100f76004803603602081101561027c57600080fd5b503561073e565b6101f46004803603602081101561029957600080fd5b50356001600160a01b031661075f565b6101f4600480360360408110156102bf57600080fd5b50803590602001356001600160a01b0316610871565b6001546001600160a01b031690565b7ff88903d82aebfe9a5fa03a1a6eb4475330ed9991c9b6ffea0f6d0154a210efbe90565b60005460ff1681565b6040805180820190915260088152670d8caecf05ccae8d60c31b602082015290565b6e0c2e074ec69a0dfb2997ba6c7d2e1e90565b6000546201000090046001600160a01b031633146103a2576040805162461bcd60e51b815260206004820152601460248201527336b9b396b9b2b73232b916b737ba16b7bbb732b960611b604482015290519081900360640190fd5b6103aa610333565b6001600160a01b0316635b0fc9c36103c06102e4565b836040518363ffffffff1660e01b815260040180838152602001826001600160a01b03166001600160a01b0316815260200192505050600060405180830381600087803b15801561041057600080fd5b505af1158015610424573d6000803e3d6000fd5b5050505050565b6000610435610333565b6001600160a01b03166302571be361044c84610574565b6040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b15801561048057600080fd5b505afa158015610494573d6000803e3d6000fd5b505050506040513d60208110156104aa57600080fd5b505192915050565b6000546201000090046001600160a01b0316331461050e576040805162461bcd60e51b815260206004820152601460248201527336b9b396b9b2b73232b916b737ba16b7bbb732b960611b604482015290519081900360640190fd5b60008054604051620100009091046001600160a01b0316907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a36000805462010000600160b01b0319169055565b6000546201000090046001600160a01b031690565b600061057e6102e4565b826040516020018083815260200182815260200192505050604051602081830303815290604052805190602001209050919050565b600054610100900460ff16806105cc575060005460ff16155b610613576040805162461bcd60e51b8152602060048201526013602482015272185b1c9958591e4b5a5b9a5d1a585b1a5e9959606a1b604482015290519081900360640190fd5b600054610100900460ff1615801561063e576000805460ff1961ff0019909116610100171660011790555b61064782610b51565b61064f610333565b6001600160a01b0316630178b8bf6106656102e4565b6040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b15801561069957600080fd5b505afa1580156106ad573d6000803e3d6000fd5b505050506040513d60208110156106c357600080fd5b5051600180546001600160a01b0319166001600160a01b03928316179081905516610728576040805162461bcd60e51b815260206004820152601060248201526f1c995cdbdb1d995c8b5b9bdd0b5cd95d60821b604482015290519081900360640190fd5b801561073a576000805461ff00191690555b5050565b6000610748610333565b6001600160a01b0316630178b8bf61044c84610574565b6000546201000090046001600160a01b031633146107bb576040805162461bcd60e51b815260206004820152601460248201527336b9b396b9b2b73232b916b737ba16b7bbb732b960611b604482015290519081900360640190fd5b6001600160a01b038116610808576040805162461bcd60e51b815260206004820152600f60248201526e696e76616c69642d6164647265737360881b604482015290519081900360640190fd5b600080546040516001600160a01b03808516936201000090930416917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b03909216620100000262010000600160b01b0319909216919091179055565b816108b3576040805162461bcd60e51b815260206004820152600d60248201526c1a5b9d985b1a590b5b1858995b609a1b604482015290519081900360640190fd5b6001600160a01b0381166108fd576040805162461bcd60e51b815260206004820152600c60248201526b34b73b30b634b216b0b2323960a11b604482015290519081900360640190fd5b60006109088361042b565b6001600160a01b031614610958576040805162461bcd60e51b8152602060048201526012602482015271185b1c9958591e4b5c9959da5cdd195c995960721b604482015290519081900360640190fd5b610960610333565b6001600160a01b0316635ef2c7f06109766102e4565b600154604080516001600160e01b031960e086901b1681526004810193909352602483018790523060448401526001600160a01b039091166064830152600060848301819052905160a48084019382900301818387803b1580156109d957600080fd5b505af11580156109ed573d6000803e3d6000fd5b50506001546001600160a01b0316915063d5fa2b009050610a0d84610574565b836040518363ffffffff1660e01b815260040180838152602001826001600160a01b03166001600160a01b0316815260200192505050600060405180830381600087803b158015610a5d57600080fd5b505af1158015610a71573d6000803e3d6000fd5b50505050610a7d610333565b6001600160a01b03166306ab5923610a936102e4565b604080516001600160e01b031960e085901b1681526004810192909252602482018690523360448301525160648083019260209291908290030181600087803b158015610adf57600080fd5b505af1158015610af3573d6000803e3d6000fd5b505050506040513d6020811015610b0957600080fd5b5050604080513381526001600160a01b0383166020820152815184927fb7e8df9dc60b2a802f7ead8aeaccb35386973c0decf634a82c83d86635a87ca7928290030190a25050565b600080546001600160a01b03909216620100000262010000600160b01b031990921691909117905556fea2646970667358221220a7db2af05ab9742c0aceb7a15e363c0d1894e81f9b156f4c26be114a5cb7a49564736f6c63430006080033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100ea5760003560e01c8063715018a61161008c578063c4d66de811610066578063c4d66de814610240578063da512b2314610266578063f2fde38b14610283578063f9b94a9a146102a9576100ea565b8063715018a6146102135780638da5cb5b1461021b578063bec7923214610223576100ea565b80632d551432116100c85780632d551432146101495780633f15457f146101c657806357a102ed146101ce5780635acbbc1d146101f6576100ea565b806304f3bcec146100ef578063114902c514610113578063158ef93e1461012d575b600080fd5b6100f76102d5565b604080516001600160a01b039092168252519081900360200190f35b61011b6102e4565b60408051918252519081900360200190f35b610135610308565b604080519115158252519081900360200190f35b610151610311565b6040805160208082528351818301528351919283929083019185019080838360005b8381101561018b578181015183820152602001610173565b50505050905090810190601f1680156101b85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100f7610333565b6101f4600480360360208110156101e457600080fd5b50356001600160a01b0316610346565b005b6100f76004803603602081101561020c57600080fd5b503561042b565b6101f46104b2565b6100f761055f565b61011b6004803603602081101561023957600080fd5b5035610574565b6101f46004803603602081101561025657600080fd5b50356001600160a01b03166105b3565b6100f76004803603602081101561027c57600080fd5b503561073e565b6101f46004803603602081101561029957600080fd5b50356001600160a01b031661075f565b6101f4600480360360408110156102bf57600080fd5b50803590602001356001600160a01b0316610871565b6001546001600160a01b031690565b7ff88903d82aebfe9a5fa03a1a6eb4475330ed9991c9b6ffea0f6d0154a210efbe90565b60005460ff1681565b6040805180820190915260088152670d8caecf05ccae8d60c31b602082015290565b6e0c2e074ec69a0dfb2997ba6c7d2e1e90565b6000546201000090046001600160a01b031633146103a2576040805162461bcd60e51b815260206004820152601460248201527336b9b396b9b2b73232b916b737ba16b7bbb732b960611b604482015290519081900360640190fd5b6103aa610333565b6001600160a01b0316635b0fc9c36103c06102e4565b836040518363ffffffff1660e01b815260040180838152602001826001600160a01b03166001600160a01b0316815260200192505050600060405180830381600087803b15801561041057600080fd5b505af1158015610424573d6000803e3d6000fd5b5050505050565b6000610435610333565b6001600160a01b03166302571be361044c84610574565b6040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b15801561048057600080fd5b505afa158015610494573d6000803e3d6000fd5b505050506040513d60208110156104aa57600080fd5b505192915050565b6000546201000090046001600160a01b0316331461050e576040805162461bcd60e51b815260206004820152601460248201527336b9b396b9b2b73232b916b737ba16b7bbb732b960611b604482015290519081900360640190fd5b60008054604051620100009091046001600160a01b0316907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a36000805462010000600160b01b0319169055565b6000546201000090046001600160a01b031690565b600061057e6102e4565b826040516020018083815260200182815260200192505050604051602081830303815290604052805190602001209050919050565b600054610100900460ff16806105cc575060005460ff16155b610613576040805162461bcd60e51b8152602060048201526013602482015272185b1c9958591e4b5a5b9a5d1a585b1a5e9959606a1b604482015290519081900360640190fd5b600054610100900460ff1615801561063e576000805460ff1961ff0019909116610100171660011790555b61064782610b51565b61064f610333565b6001600160a01b0316630178b8bf6106656102e4565b6040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b15801561069957600080fd5b505afa1580156106ad573d6000803e3d6000fd5b505050506040513d60208110156106c357600080fd5b5051600180546001600160a01b0319166001600160a01b03928316179081905516610728576040805162461bcd60e51b815260206004820152601060248201526f1c995cdbdb1d995c8b5b9bdd0b5cd95d60821b604482015290519081900360640190fd5b801561073a576000805461ff00191690555b5050565b6000610748610333565b6001600160a01b0316630178b8bf61044c84610574565b6000546201000090046001600160a01b031633146107bb576040805162461bcd60e51b815260206004820152601460248201527336b9b396b9b2b73232b916b737ba16b7bbb732b960611b604482015290519081900360640190fd5b6001600160a01b038116610808576040805162461bcd60e51b815260206004820152600f60248201526e696e76616c69642d6164647265737360881b604482015290519081900360640190fd5b600080546040516001600160a01b03808516936201000090930416917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b03909216620100000262010000600160b01b0319909216919091179055565b816108b3576040805162461bcd60e51b815260206004820152600d60248201526c1a5b9d985b1a590b5b1858995b609a1b604482015290519081900360640190fd5b6001600160a01b0381166108fd576040805162461bcd60e51b815260206004820152600c60248201526b34b73b30b634b216b0b2323960a11b604482015290519081900360640190fd5b60006109088361042b565b6001600160a01b031614610958576040805162461bcd60e51b8152602060048201526012602482015271185b1c9958591e4b5c9959da5cdd195c995960721b604482015290519081900360640190fd5b610960610333565b6001600160a01b0316635ef2c7f06109766102e4565b600154604080516001600160e01b031960e086901b1681526004810193909352602483018790523060448401526001600160a01b039091166064830152600060848301819052905160a48084019382900301818387803b1580156109d957600080fd5b505af11580156109ed573d6000803e3d6000fd5b50506001546001600160a01b0316915063d5fa2b009050610a0d84610574565b836040518363ffffffff1660e01b815260040180838152602001826001600160a01b03166001600160a01b0316815260200192505050600060405180830381600087803b158015610a5d57600080fd5b505af1158015610a71573d6000803e3d6000fd5b50505050610a7d610333565b6001600160a01b03166306ab5923610a936102e4565b604080516001600160e01b031960e085901b1681526004810192909252602482018690523360448301525160648083019260209291908290030181600087803b158015610adf57600080fd5b505af1158015610af3573d6000803e3d6000fd5b505050506040513d6020811015610b0957600080fd5b5050604080513381526001600160a01b0383166020820152815184927fb7e8df9dc60b2a802f7ead8aeaccb35386973c0decf634a82c83d86635a87ca7928290030190a25050565b600080546001600160a01b03909216620100000262010000600160b01b031990921691909117905556fea2646970667358221220a7db2af05ab9742c0aceb7a15e363c0d1894e81f9b156f4c26be114a5cb7a49564736f6c63430006080033",
+  "libraries": {},
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3434,
+        "contract": "contracts/core/ENSGateway.sol:ENSGateway",
+        "label": "initialized",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 3436,
+        "contract": "contracts/core/ENSGateway.sol:ENSGateway",
+        "label": "initializing",
+        "offset": 1,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 3476,
+        "contract": "contracts/core/ENSGateway.sol:ENSGateway",
+        "label": "_owner",
+        "offset": 2,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 2227,
+        "contract": "contracts/core/ENSGateway.sol:ENSGateway",
+        "label": "_resolver",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_address"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      }
+    }
+  },
+  "gasEstimates": {
+    "creation": {
+      "codeDepositCost": "598600",
+      "executionCost": "632",
+      "totalCost": "599232"
+    },
+    "external": {
+      "ens()": "264",
+      "initialize(address)": "infinite",
+      "initialized()": "1078",
+      "owner()": "1093",
+      "ownerOfSubdomain(bytes32)": "infinite",
+      "registerSubdomain(bytes32,address)": "infinite",
+      "renounceOwnership()": "24207",
+      "resolver()": "1061",
+      "resolverOfSubdomain(bytes32)": "infinite",
+      "setTLDOwner(address)": "infinite",
+      "subdomainNode(bytes32)": "506",
+      "tld()": "infinite",
+      "tldNode()": "244",
+      "transferOwnership(address)": "24401"
+    }
+  }
+}

@@ -21,11 +21,11 @@ module.exports = async ({getNamedAccounts, deployments}) => {
     salt: "wallet-0",
     initArgs: [
       (await getENSGateway()).address,
-      utils.id("v0"),
+      utils.id("wallet-v0"),
       deployer,
       [witness],
       [utils.formatBytes32String("witness")],
     ],
-    updateENS: ["wallet-v0", "wallet"],
+    updateENS: ["wallet"],
   });
 };

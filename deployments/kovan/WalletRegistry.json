@@ -1,0 +1,298 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "initialized",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "latest",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "versionName",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "queryWithAddress",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "versionName",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "versionName",
+          "type": "bytes32"
+        }
+      ],
+      "name": "queryWithVersionName",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "add",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "versionName",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "register",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "versionNames",
+      "outputs": [
+        {
+          "internalType": "bytes32[]",
+          "name": "",
+          "type": "bytes32[]"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "receipt": {
+    "to": "0x4e59b44847b379578588920cA78FbF26c0B4956C",
+    "from": "0x5b8C253517b6Bd003369173109693B01cb6841B5",
+    "contractAddress": null,
+    "transactionIndex": 1,
+    "gasUsed": "516623",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x57442c4e01b708b0a7c11ea5ddf3db2328a12ce4ff08dc6a31fb2b5787a14a48",
+    "transactionHash": "0x07d63006ea27ea3091252e3766f9109d3aa68c13bd5d0d33365ea0936e6915fd",
+    "logs": [],
+    "blockNumber": 20691257,
+    "cumulativeGasUsed": "666987",
+    "status": 1,
+    "byzantium": true
+  },
+  "address": "0xd20d604e1893b072087210773df80016b7b0f642",
+  "args": [],
+  "solcInputHash": "0x0ba34002262c75f24ebbcd47c2a71ec7f5830be3e50c097a446a7d66537a7b5a",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.8+commit.0bbfe453\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"initialized\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"latest\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"versionName\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"queryWithAddress\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"versionName\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"versionName\",\"type\":\"bytes32\"}],\"name\":\"queryWithVersionName\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"add\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"versionName\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"register\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"versionNames\",\"outputs\":[{\"internalType\":\"bytes32[]\",\"name\":\"\",\"type\":\"bytes32[]\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/core/WalletRegistry.sol\":\"WalletRegistry\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/core/WalletRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.6.8;\\n\\nimport \\\"./mixins/Initializable.sol\\\";\\nimport \\\"./mixins/Ownable.sol\\\";\\nimport \\\"./interfaces/IWalletRegistry.sol\\\";\\n\\ncontract WalletRegistry is Initializable, Ownable, IWalletRegistry {\\n    struct Implementation {\\n        bytes32 versionName;\\n        address addr;\\n    }\\n\\n    Implementation[] internal _wallets;\\n\\n    function initialize(address owner) public initializer {\\n        _initialize(owner);\\n    }\\n\\n    function versionNames() public override returns (bytes32[] memory) {\\n        bytes32[] memory v = new bytes32[](_wallets.length);\\n        for (uint256 i = 0; i < _wallets.length; i++) {\\n            v[i] = _wallets[i].versionName;\\n        }\\n        return v;\\n    }\\n\\n    function register(bytes32 versionName, address addr) public override onlyOwner {\\n        require(versionName != bytes32(0), \\\"version-must-not-be-empty\\\");\\n        require(addr != address(0), \\\"address-must-not-be-zero\\\");\\n\\n        Implementation storage wallet = _wallets.push();\\n        wallet.versionName = versionName;\\n        wallet.addr = addr;\\n    }\\n\\n    function latest() public override view returns (bytes32 versionName, address addr) {\\n        uint256 length = _wallets.length;\\n        if (length > 0) {\\n            Implementation storage wallet = _wallets[length - 1];\\n            return (wallet.versionName, wallet.addr);\\n        } else {\\n            return (0, address(0));\\n        }\\n    }\\n\\n    function queryWithAddress(address addr) public override view returns (bytes32 versionName) {\\n        for (uint256 i = 0; i < _wallets.length; i++) {\\n            Implementation storage wallet = _wallets[i];\\n            if (wallet.addr == addr) {\\n                return wallet.versionName;\\n            }\\n        }\\n        return 0;\\n    }\\n\\n    function queryWithVersionName(bytes32 versionName) public override view returns (address add) {\\n        for (uint256 i = 0; i < _wallets.length; i++) {\\n            Implementation storage wallet = _wallets[i];\\n            if (wallet.versionName == versionName) {\\n                return wallet.addr;\\n            }\\n        }\\n        return address(0);\\n    }\\n}\\n\",\"keccak256\":\"0x23190f356336244b8eb6adaf84562fbe7f3b592ef5a2374039c7596f533bdbca\",\"license\":\"MIT\"},\"contracts/core/interfaces/IWalletRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity >=0.6.0;\\n\\ninterface IWalletRegistry {\\n    function versionNames() external returns (bytes32[] memory);\\n\\n    function register(bytes32 versionName, address addr) external;\\n\\n    function latest() external view returns (bytes32 versionName, address addr);\\n\\n    function queryWithAddress(address addr) external view returns (bytes32 versionName);\\n\\n    function queryWithVersionName(bytes32 versionName) external view returns (address add);\\n}\\n\",\"keccak256\":\"0x83954e52aac252147d9fd7d3722d292dd5fb357b6618c7e42685acc2b4517d58\",\"license\":\"MIT\"},\"contracts/core/mixins/Initializable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// solhint-disable-next-line max-line-length\\n// https://github.com/OpenZeppelin/openzeppelin-sdk/blob/master/packages/lib/contracts/Initializable.sol\\n\\npragma solidity ^0.6.8;\\n\\ncontract Initializable {\\n    bool public initialized;\\n\\n    bool private initializing;\\n\\n    modifier initializer() {\\n        require(initializing || !initialized, \\\"already-initialized\\\");\\n\\n        bool isTopLevelCall = !initializing;\\n        if (isTopLevelCall) {\\n            initializing = true;\\n            initialized = true;\\n        }\\n\\n        _;\\n\\n        if (isTopLevelCall) {\\n            initializing = false;\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x0b5b5095ed3cf49499c5aa347ac6f85fd59671a365fcff8ff5cc1b931cc2aa3e\",\"license\":\"MIT\"},\"contracts/core/mixins/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// solhint-disable-next-line max-line-length\\n// https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol\\n\\npragma solidity ^0.6.8;\\n\\nabstract contract Ownable {\\n    address private _owner;\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    modifier onlyOwner {\\n        require(_owner == msg.sender, \\\"msg-sender-not-owner\\\");\\n        _;\\n    }\\n\\n    function _initialize(address owner) internal {\\n        _owner = owner;\\n    }\\n\\n    function owner() public view returns (address) {\\n        return _owner;\\n    }\\n\\n    function transferOwnership(address newOwner) public onlyOwner {\\n        require(newOwner != address(0), \\\"invalid-address\\\");\\n        emit OwnershipTransferred(_owner, newOwner);\\n        _owner = newOwner;\\n    }\\n\\n    function renounceOwnership() public onlyOwner {\\n        emit OwnershipTransferred(_owner, address(0));\\n        _owner = address(0);\\n    }\\n}\\n\",\"keccak256\":\"0xc58654e11c329f18f62f16502e435d58971d980a53a5c356be4d08538c13898c\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061085d806100206000396000f3fe608060405234801561001057600080fd5b506004361061009e5760003560e01c80638da5cb5b116100665780638da5cb5b14610183578063b60ff4a01461018b578063c4d66de8146101c3578063d22057a9146101e9578063f2fde38b146102155761009e565b8063158ef93e146100a35780631e1f8692146100bf5780634603de5d1461011757806352bfe78914610150578063715018a614610179575b600080fd5b6100ab61023b565b604080519115158252519081900360200190f35b6100c7610244565b60408051602080825283518183015283519192839290830191858101910280838360005b838110156101035781810151838201526020016100eb565b505050509050019250505060405180910390f35b6101346004803603602081101561012d57600080fd5b50356102e0565b604080516001600160a01b039092168252519081900360200190f35b610158610343565b604080519283526001600160a01b0390911660208301528051918290030190f35b61018161039d565b005b61013461044a565b6101b1600480360360208110156101a157600080fd5b50356001600160a01b031661045f565b60408051918252519081900360200190f35b610181600480360360208110156101d957600080fd5b50356001600160a01b03166104ba565b610181600480360360408110156101ff57600080fd5b50803590602001356001600160a01b0316610564565b6101816004803603602081101561022b57600080fd5b50356001600160a01b03166106eb565b60005460ff1681565b600154606090819067ffffffffffffffff8111801561026257600080fd5b5060405190808252806020026020018201604052801561028c578160200160208202803683370190505b50905060005b6001548110156102da57600181815481106102a957fe5b9060005260206000209060020201600001548282815181106102c757fe5b6020908102919091010152600101610292565b50905090565b6000805b600154811015610338576000600182815481106102fd57fe5b90600052602060002090600202019050838160000154141561032f57600101546001600160a01b0316915061033e9050565b506001016102e4565b50600090505b919050565b6001546000908190801561039057600060018083038154811061036257fe5b6000918252602090912060029091020180546001909101549094506001600160a01b03169250610399915050565b50600091508190505b9091565b6000546201000090046001600160a01b031633146103f9576040805162461bcd60e51b815260206004820152601460248201527336b9b396b9b2b73232b916b737ba16b7bbb732b960611b604482015290519081900360640190fd5b60008054604051620100009091046001600160a01b0316907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a36000805462010000600160b01b0319169055565b6000546201000090046001600160a01b031690565b6000805b6001548110156103385760006001828154811061047c57fe5b6000918252602090912060029091020160018101549091506001600160a01b03858116911614156104b15754915061033e9050565b50600101610463565b600054610100900460ff16806104d3575060005460ff16155b61051a576040805162461bcd60e51b8152602060048201526013602482015272185b1c9958591e4b5a5b9a5d1a585b1a5e9959606a1b604482015290519081900360640190fd5b600054610100900460ff16158015610545576000805460ff1961ff0019909116610100171660011790555b61054e826107fd565b8015610560576000805461ff00191690555b5050565b6000546201000090046001600160a01b031633146105c0576040805162461bcd60e51b815260206004820152601460248201527336b9b396b9b2b73232b916b737ba16b7bbb732b960611b604482015290519081900360640190fd5b81610612576040805162461bcd60e51b815260206004820152601960248201527f76657273696f6e2d6d7573742d6e6f742d62652d656d70747900000000000000604482015290519081900360640190fd5b6001600160a01b03811661066d576040805162461bcd60e51b815260206004820152601860248201527f616464726573732d6d7573742d6e6f742d62652d7a65726f0000000000000000604482015290519081900360640190fd5b6001805480820182556000919091526002027fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf68101929092557fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf790910180546001600160a01b039092166001600160a01b0319909216919091179055565b6000546201000090046001600160a01b03163314610747576040805162461bcd60e51b815260206004820152601460248201527336b9b396b9b2b73232b916b737ba16b7bbb732b960611b604482015290519081900360640190fd5b6001600160a01b038116610794576040805162461bcd60e51b815260206004820152600f60248201526e696e76616c69642d6164647265737360881b604482015290519081900360640190fd5b600080546040516001600160a01b03808516936201000090930416917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b03909216620100000262010000600160b01b0319909216919091179055565b600080546001600160a01b03909216620100000262010000600160b01b031990921691909117905556fea2646970667358221220ad48061d65c9a79b71ff3b445bfe912fb8b2e9283d9037cbb1f711927caff00e64736f6c63430006080033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061009e5760003560e01c80638da5cb5b116100665780638da5cb5b14610183578063b60ff4a01461018b578063c4d66de8146101c3578063d22057a9146101e9578063f2fde38b146102155761009e565b8063158ef93e146100a35780631e1f8692146100bf5780634603de5d1461011757806352bfe78914610150578063715018a614610179575b600080fd5b6100ab61023b565b604080519115158252519081900360200190f35b6100c7610244565b60408051602080825283518183015283519192839290830191858101910280838360005b838110156101035781810151838201526020016100eb565b505050509050019250505060405180910390f35b6101346004803603602081101561012d57600080fd5b50356102e0565b604080516001600160a01b039092168252519081900360200190f35b610158610343565b604080519283526001600160a01b0390911660208301528051918290030190f35b61018161039d565b005b61013461044a565b6101b1600480360360208110156101a157600080fd5b50356001600160a01b031661045f565b60408051918252519081900360200190f35b610181600480360360208110156101d957600080fd5b50356001600160a01b03166104ba565b610181600480360360408110156101ff57600080fd5b50803590602001356001600160a01b0316610564565b6101816004803603602081101561022b57600080fd5b50356001600160a01b03166106eb565b60005460ff1681565b600154606090819067ffffffffffffffff8111801561026257600080fd5b5060405190808252806020026020018201604052801561028c578160200160208202803683370190505b50905060005b6001548110156102da57600181815481106102a957fe5b9060005260206000209060020201600001548282815181106102c757fe5b6020908102919091010152600101610292565b50905090565b6000805b600154811015610338576000600182815481106102fd57fe5b90600052602060002090600202019050838160000154141561032f57600101546001600160a01b0316915061033e9050565b506001016102e4565b50600090505b919050565b6001546000908190801561039057600060018083038154811061036257fe5b6000918252602090912060029091020180546001909101549094506001600160a01b03169250610399915050565b50600091508190505b9091565b6000546201000090046001600160a01b031633146103f9576040805162461bcd60e51b815260206004820152601460248201527336b9b396b9b2b73232b916b737ba16b7bbb732b960611b604482015290519081900360640190fd5b60008054604051620100009091046001600160a01b0316907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a36000805462010000600160b01b0319169055565b6000546201000090046001600160a01b031690565b6000805b6001548110156103385760006001828154811061047c57fe5b6000918252602090912060029091020160018101549091506001600160a01b03858116911614156104b15754915061033e9050565b50600101610463565b600054610100900460ff16806104d3575060005460ff16155b61051a576040805162461bcd60e51b8152602060048201526013602482015272185b1c9958591e4b5a5b9a5d1a585b1a5e9959606a1b604482015290519081900360640190fd5b600054610100900460ff16158015610545576000805460ff1961ff0019909116610100171660011790555b61054e826107fd565b8015610560576000805461ff00191690555b5050565b6000546201000090046001600160a01b031633146105c0576040805162461bcd60e51b815260206004820152601460248201527336b9b396b9b2b73232b916b737ba16b7bbb732b960611b604482015290519081900360640190fd5b81610612576040805162461bcd60e51b815260206004820152601960248201527f76657273696f6e2d6d7573742d6e6f742d62652d656d70747900000000000000604482015290519081900360640190fd5b6001600160a01b03811661066d576040805162461bcd60e51b815260206004820152601860248201527f616464726573732d6d7573742d6e6f742d62652d7a65726f0000000000000000604482015290519081900360640190fd5b6001805480820182556000919091526002027fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf68101929092557fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf790910180546001600160a01b039092166001600160a01b0319909216919091179055565b6000546201000090046001600160a01b03163314610747576040805162461bcd60e51b815260206004820152601460248201527336b9b396b9b2b73232b916b737ba16b7bbb732b960611b604482015290519081900360640190fd5b6001600160a01b038116610794576040805162461bcd60e51b815260206004820152600f60248201526e696e76616c69642d6164647265737360881b604482015290519081900360640190fd5b600080546040516001600160a01b03808516936201000090930416917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b03909216620100000262010000600160b01b0319909216919091179055565b600080546001600160a01b03909216620100000262010000600160b01b031990921691909117905556fea2646970667358221220ad48061d65c9a79b71ff3b445bfe912fb8b2e9283d9037cbb1f711927caff00e64736f6c63430006080033",
+  "libraries": {},
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3434,
+        "contract": "contracts/core/WalletRegistry.sol:WalletRegistry",
+        "label": "initialized",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 3436,
+        "contract": "contracts/core/WalletRegistry.sol:WalletRegistry",
+        "label": "initializing",
+        "offset": 1,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 3476,
+        "contract": "contracts/core/WalletRegistry.sol:WalletRegistry",
+        "label": "_owner",
+        "offset": 2,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 2639,
+        "contract": "contracts/core/WalletRegistry.sol:WalletRegistry",
+        "label": "_wallets",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_array(t_struct(Implementation)2636_storage)dyn_storage"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_struct(Implementation)2636_storage)dyn_storage": {
+        "base": "t_struct(Implementation)2636_storage",
+        "encoding": "dynamic_array",
+        "label": "struct WalletRegistry.Implementation[]",
+        "numberOfBytes": "32"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_struct(Implementation)2636_storage": {
+        "encoding": "inplace",
+        "label": "struct WalletRegistry.Implementation",
+        "members": [
+          {
+            "astId": 2633,
+            "contract": "contracts/core/WalletRegistry.sol:WalletRegistry",
+            "label": "versionName",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bytes32"
+          },
+          {
+            "astId": 2635,
+            "contract": "contracts/core/WalletRegistry.sol:WalletRegistry",
+            "label": "addr",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_address"
+          }
+        ],
+        "numberOfBytes": "64"
+      }
+    }
+  },
+  "gasEstimates": {
+    "creation": {
+      "codeDepositCost": "428200",
+      "executionCost": "461",
+      "totalCost": "428661"
+    },
+    "external": {
+      "initialize(address)": "65350",
+      "initialized()": "1011",
+      "latest()": "3715",
+      "owner()": "1048",
+      "queryWithAddress(address)": "infinite",
+      "queryWithVersionName(bytes32)": "infinite",
+      "register(bytes32,address)": "62928",
+      "renounceOwnership()": "24273",
+      "transferOwnership(address)": "24423",
+      "versionNames()": "infinite"
+    }
+  }
+}

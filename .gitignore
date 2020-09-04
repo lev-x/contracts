@@ -6,4 +6,4 @@ node_modules
 #Buidler files
 cache
 artifacts
-deployments
+deployments/localhost*

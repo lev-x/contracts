@@ -1,0 +1,294 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "label",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "SubdomainRegistered",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "ens",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "initialized",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "label",
+          "type": "bytes32"
+        }
+      ],
+      "name": "ownerOfSubdomain",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "label",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "registerSubdomain",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "resolver",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "resolverOfSubdomain",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "label",
+          "type": "bytes32"
+        }
+      ],
+      "name": "subdomainNode",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "tld",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "tldNode",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "receipt": {
+    "to": "0x4e59b44847b379578588920cA78FbF26c0B4956C",
+    "from": "0x5b8C253517b6Bd003369173109693B01cb6841B5",
+    "contractAddress": null,
+    "transactionIndex": 0,
+    "gasUsed": "706577",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xd893620325c8d7a7ac990696ff8d2bf1f6d0738e715d718226e6b62fd9a52e60",
+    "transactionHash": "0x156db5b8aefaff7194845a879c6c8888ab9e598a28ac1e9719c0b1bca97403fb",
+    "logs": [],
+    "blockNumber": 20691222,
+    "cumulativeGasUsed": "706577",
+    "status": 1,
+    "byzantium": true
+  },
+  "address": "0xb8648219690ed9f4a054fe6a27bbf0f98b93f1c0",
+  "args": [],
+  "solcInputHash": "0x0ba34002262c75f24ebbcd47c2a71ec7f5830be3e50c097a446a7d66537a7b5a",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.8+commit.0bbfe453\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"label\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"SubdomainRegistered\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"ens\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"initialized\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"label\",\"type\":\"bytes32\"}],\"name\":\"ownerOfSubdomain\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"label\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"registerSubdomain\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"resolver\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"resolverOfSubdomain\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"label\",\"type\":\"bytes32\"}],\"name\":\"subdomainNode\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"tld\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"tldNode\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/core/mocks/ENSGatewayMock.sol\":\"ENSGatewayMock\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/core/interfaces/IENSGateway.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity >=0.6.0;\\n\\ninterface IENSGateway {\\n    event SubdomainRegistered(bytes32 indexed label, address owner, address addr);\\n\\n    function ens() external view returns (address);\\n\\n    function resolver() external view returns (address);\\n\\n    function tld() external view returns (string memory);\\n\\n    function tldNode() external view returns (bytes32);\\n\\n    function subdomainNode(bytes32 label) external view returns (bytes32);\\n\\n    function ownerOfSubdomain(bytes32 label) external view returns (address);\\n\\n    function resolverOfSubdomain(bytes32 label) external view returns (address);\\n\\n    function registerSubdomain(bytes32 label, address addr) external;\\n}\\n\",\"keccak256\":\"0xa79b5499ba2ca81d3dd1e6fa32598e242c0aa941a1b076f075b2ecb41de0ad03\",\"license\":\"MIT\"},\"contracts/core/mixins/Initializable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// solhint-disable-next-line max-line-length\\n// https://github.com/OpenZeppelin/openzeppelin-sdk/blob/master/packages/lib/contracts/Initializable.sol\\n\\npragma solidity ^0.6.8;\\n\\ncontract Initializable {\\n    bool public initialized;\\n\\n    bool private initializing;\\n\\n    modifier initializer() {\\n        require(initializing || !initialized, \\\"already-initialized\\\");\\n\\n        bool isTopLevelCall = !initializing;\\n        if (isTopLevelCall) {\\n            initializing = true;\\n            initialized = true;\\n        }\\n\\n        _;\\n\\n        if (isTopLevelCall) {\\n            initializing = false;\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x0b5b5095ed3cf49499c5aa347ac6f85fd59671a365fcff8ff5cc1b931cc2aa3e\",\"license\":\"MIT\"},\"contracts/core/mocks/AddrResolverMock.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.6.8;\\n\\ncontract AddrResolverMock {\\n    uint256 private constant COIN_TYPE_ETH = 60;\\n\\n    address private _owner;\\n    mapping(bytes32 => mapping(uint256 => bytes)) private _addresses;\\n\\n    event AddrChanged(bytes32 indexed node, address a);\\n    event AddressChanged(bytes32 indexed node, uint256 coinType, bytes newAddress);\\n\\n    constructor() public {\\n        _owner = msg.sender;\\n    }\\n\\n    function isAuthorised() internal view returns (bool) {\\n        return msg.sender == _owner;\\n    }\\n\\n    modifier authorised() {\\n        require(isAuthorised(), \\\"not-authorised\\\");\\n        _;\\n    }\\n\\n    function setAddr(bytes32 node, address a) public authorised {\\n        setAddr(node, COIN_TYPE_ETH, addressToBytes(a));\\n    }\\n\\n    function addr(bytes32 node) public view returns (address payable) {\\n        bytes memory a = addr(node, COIN_TYPE_ETH);\\n        if (a.length == 0) {\\n            return address(0);\\n        }\\n        return bytesToAddress(a);\\n    }\\n\\n    function setAddr(\\n        bytes32 node,\\n        uint256 coinType,\\n        bytes memory a\\n    ) public authorised {\\n        emit AddressChanged(node, coinType, a);\\n        if (coinType == COIN_TYPE_ETH) {\\n            emit AddrChanged(node, bytesToAddress(a));\\n        }\\n        _addresses[node][coinType] = a;\\n    }\\n\\n    function addr(bytes32 node, uint256 coinType) public view returns (bytes memory) {\\n        return _addresses[node][coinType];\\n    }\\n\\n    function bytesToAddress(bytes memory b) internal pure returns (address payable a) {\\n        require(b.length == 20, \\\"\\\");\\n        assembly {\\n            a := div(mload(add(b, 32)), exp(256, 12))\\n        }\\n    }\\n\\n    function addressToBytes(address a) internal pure returns (bytes memory b) {\\n        b = new bytes(20);\\n        assembly {\\n            mstore(add(b, 32), mul(a, exp(256, 12)))\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x9b58e4370b6c9bee232b0292d715a592f5605dd52c97b50021363fb135a8eb4c\",\"license\":\"MIT\"},\"contracts/core/mocks/ENSGatewayMock.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.6.8;\\n\\nimport \\\"../mixins/Initializable.sol\\\";\\nimport \\\"../interfaces/IENSGateway.sol\\\";\\nimport \\\"./AddrResolverMock.sol\\\";\\n\\ncontract ENSGatewayMock is Initializable, IENSGateway {\\n    mapping(bytes32 => address) internal _owners;\\n    AddrResolverMock internal _resolver;\\n\\n    function initialize(address) public initializer {\\n        _resolver = new AddrResolverMock();\\n    }\\n\\n    function ens() public override view returns (address) {\\n        return 0x0000000000000000000000000000000000000000;\\n    }\\n\\n    function resolver() public override view returns (address) {\\n        return 0x0000000000000000000000000000000000000000;\\n    }\\n\\n    function tld() public override view returns (string memory) {\\n        return \\\"levx.eth\\\";\\n    }\\n\\n    // namehash(\\\"levx.eth\\\")\\n    function tldNode() public override view returns (bytes32) {\\n        return 0xf88903d82aebfe9a5fa03a1a6eb4475330ed9991c9b6ffea0f6d0154a210efbe;\\n    }\\n\\n    function subdomainNode(bytes32 label) public override view returns (bytes32) {\\n        return keccak256(abi.encodePacked(tldNode(), label));\\n    }\\n\\n    function ownerOfSubdomain(bytes32 label) public override view returns (address) {\\n        return _owners[label];\\n    }\\n\\n    function resolverOfSubdomain(bytes32) public override view returns (address) {\\n        return address(_resolver);\\n    }\\n\\n    function registerSubdomain(bytes32 label, address addr) public override {\\n        require(label != bytes32(0), \\\"invalid-label\\\");\\n        require(addr != address(0), \\\"invalid-addr\\\");\\n        require(ownerOfSubdomain(label) == address(0), \\\"already-registered\\\");\\n\\n        _owners[label] = msg.sender;\\n        _resolver.setAddr(subdomainNode(label), addr);\\n    }\\n}\\n\",\"keccak256\":\"0x159386777a9fed547734806d4839166ffcaf8d03547266ee2197c146a11c24ed\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610bcb806100206000396000f3fe608060405234801561001057600080fd5b506004361061009e5760003560e01c80635acbbc1d116100665780635acbbc1d1461017a578063bec7923214610197578063c4d66de8146101b4578063da512b23146101dc578063f9b94a9a146101f95761009e565b806304f3bcec146100a3578063114902c5146100c7578063158ef93e146100e15780632d551432146100fd5780633f15457f146100a3575b600080fd5b6100ab610225565b604080516001600160a01b039092168252519081900360200190f35b6100cf61022a565b60408051918252519081900360200190f35b6100e961024e565b604080519115158252519081900360200190f35b610105610257565b6040805160208082528351818301528351919283929083019185019080838360005b8381101561013f578181015183820152602001610127565b50505050905090810190601f16801561016c5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100ab6004803603602081101561019057600080fd5b5035610279565b6100cf600480360360208110156101ad57600080fd5b5035610294565b6101da600480360360208110156101ca57600080fd5b50356001600160a01b03166102d3565b005b6100ab600480360360208110156101f257600080fd5b50356103bd565b6101da6004803603604081101561020f57600080fd5b50803590602001356001600160a01b03166103cd565b600090565b7ff88903d82aebfe9a5fa03a1a6eb4475330ed9991c9b6ffea0f6d0154a210efbe90565b60005460ff1681565b6040805180820190915260088152670d8caecf05ccae8d60c31b602082015290565b6000908152600160205260409020546001600160a01b031690565b600061029e61022a565b826040516020018083815260200182815260200192505050604051602081830303815290604052805190602001209050919050565b600054610100900460ff16806102ec575060005460ff16155b610333576040805162461bcd60e51b8152602060048201526013602482015272185b1c9958591e4b5a5b9a5d1a585b1a5e9959606a1b604482015290519081900360640190fd5b600054610100900460ff1615801561035e576000805460ff1961ff0019909116610100171660011790555b60405161036a90610558565b604051809103906000f080158015610386573d6000803e3d6000fd5b50600280546001600160a01b0319166001600160a01b039290921691909117905580156103b9576000805461ff00191690555b5050565b506002546001600160a01b031690565b8161040f576040805162461bcd60e51b815260206004820152600d60248201526c1a5b9d985b1a590b5b1858995b609a1b604482015290519081900360640190fd5b6001600160a01b038116610459576040805162461bcd60e51b815260206004820152600c60248201526b34b73b30b634b216b0b2323960a11b604482015290519081900360640190fd5b600061046483610279565b6001600160a01b0316146104b4576040805162461bcd60e51b8152602060048201526012602482015271185b1c9958591e4b5c9959da5cdd195c995960721b604482015290519081900360640190fd5b600082815260016020526040902080546001600160a01b031916331790556002546001600160a01b031663d5fa2b006104ec84610294565b836040518363ffffffff1660e01b815260040180838152602001826001600160a01b03166001600160a01b0316815260200192505050600060405180830381600087803b15801561053c57600080fd5b505af1158015610550573d6000803e3d6000fd5b505050505050565b610630806105668339019056fe608060405234801561001057600080fd5b50600080546001600160a01b031916331790556105fe806100326000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80633b3b57de146100515780638b95dd711461008a578063d5fa2b001461013e578063f1cb7e061461016a575b600080fd5b61006e6004803603602081101561006757600080fd5b5035610202565b604080516001600160a01b039092168252519081900360200190f35b61013c600480360360608110156100a057600080fd5b8135916020810135918101906060810160408201356401000000008111156100c757600080fd5b8201836020820111156100d957600080fd5b803590602001918460018302840111640100000000831117156100fb57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250929550610239945050505050565b005b61013c6004803603604081101561015457600080fd5b50803590602001356001600160a01b03166103a2565b61018d6004803603604081101561018057600080fd5b5080359060200135610404565b6040805160208082528351818301528351919283929083019185019080838360005b838110156101c75781810151838201526020016101af565b50505050905090810190601f1680156101f45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6000606061021183603c610404565b9050805160001415610227576000915050610234565b610230816104ad565b9150505b919050565b6102416104ee565b610283576040805162461bcd60e51b815260206004820152600e60248201526d1b9bdd0b585d5d1a1bdc9a5cd95960921b604482015290519081900360640190fd5b827f65412581168e88a1e60c6459d7f44ae83ad0832e670826c05a4e2476b57af75283836040518083815260200180602001828103825283818151815260200191508051906020019080838360005b838110156102ea5781810151838201526020016102d2565b50505050905090810190601f1680156103175780820380516001836020036101000a031916815260200191505b50935050505060405180910390a2603c82141561037557827f52d7d861f09ab3d26239d492e8968629f95e9e318cf0b73bfddc441522a15fd2610359836104ad565b604080516001600160a01b039092168252519081900360200190a25b60008381526001602090815260408083208584528252909120825161039c92840190610530565b50505050565b6103aa6104ee565b6103ec576040805162461bcd60e51b815260206004820152600e60248201526d1b9bdd0b585d5d1a1bdc9a5cd95960921b604482015290519081900360640190fd5b61040082603c6103fb84610500565b610239565b5050565b600082815260016020818152604080842085855282529283902080548451600294821615610100026000190190911693909304601f810183900483028401830190945283835260609390918301828280156104a05780601f10610475576101008083540402835291602001916104a0565b820191906000526020600020905b81548152906001019060200180831161048357829003601f168201915b5050505050905092915050565b600081516014146104df576040805162461bcd60e51b8152602060048201526000602482015290519081900360640190fd5b5060200151600160601b900490565b6000546001600160a01b031633145b90565b604080516014808252818301909252606091602082018180368337505050600160601b9290920260208301525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061057157805160ff191683800117855561059e565b8280016001018555821561059e579182015b8281111561059e578251825591602001919060010190610583565b506105aa9291506105ae565b5090565b6104fd91905b808211156105aa57600081556001016105b456fea26469706673582212200907daf25c34267c5ca4eb20442505ab03ab80dd2a1d73e71f0e48e2a877b21564736f6c63430006080033a26469706673582212207da45da9cc491ee90fbce730fa1ffbc395e2dd3ded77caa952eee535a1fa883e64736f6c63430006080033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061009e5760003560e01c80635acbbc1d116100665780635acbbc1d1461017a578063bec7923214610197578063c4d66de8146101b4578063da512b23146101dc578063f9b94a9a146101f95761009e565b806304f3bcec146100a3578063114902c5146100c7578063158ef93e146100e15780632d551432146100fd5780633f15457f146100a3575b600080fd5b6100ab610225565b604080516001600160a01b039092168252519081900360200190f35b6100cf61022a565b60408051918252519081900360200190f35b6100e961024e565b604080519115158252519081900360200190f35b610105610257565b6040805160208082528351818301528351919283929083019185019080838360005b8381101561013f578181015183820152602001610127565b50505050905090810190601f16801561016c5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100ab6004803603602081101561019057600080fd5b5035610279565b6100cf600480360360208110156101ad57600080fd5b5035610294565b6101da600480360360208110156101ca57600080fd5b50356001600160a01b03166102d3565b005b6100ab600480360360208110156101f257600080fd5b50356103bd565b6101da6004803603604081101561020f57600080fd5b50803590602001356001600160a01b03166103cd565b600090565b7ff88903d82aebfe9a5fa03a1a6eb4475330ed9991c9b6ffea0f6d0154a210efbe90565b60005460ff1681565b6040805180820190915260088152670d8caecf05ccae8d60c31b602082015290565b6000908152600160205260409020546001600160a01b031690565b600061029e61022a565b826040516020018083815260200182815260200192505050604051602081830303815290604052805190602001209050919050565b600054610100900460ff16806102ec575060005460ff16155b610333576040805162461bcd60e51b8152602060048201526013602482015272185b1c9958591e4b5a5b9a5d1a585b1a5e9959606a1b604482015290519081900360640190fd5b600054610100900460ff1615801561035e576000805460ff1961ff0019909116610100171660011790555b60405161036a90610558565b604051809103906000f080158015610386573d6000803e3d6000fd5b50600280546001600160a01b0319166001600160a01b039290921691909117905580156103b9576000805461ff00191690555b5050565b506002546001600160a01b031690565b8161040f576040805162461bcd60e51b815260206004820152600d60248201526c1a5b9d985b1a590b5b1858995b609a1b604482015290519081900360640190fd5b6001600160a01b038116610459576040805162461bcd60e51b815260206004820152600c60248201526b34b73b30b634b216b0b2323960a11b604482015290519081900360640190fd5b600061046483610279565b6001600160a01b0316146104b4576040805162461bcd60e51b8152602060048201526012602482015271185b1c9958591e4b5c9959da5cdd195c995960721b604482015290519081900360640190fd5b600082815260016020526040902080546001600160a01b031916331790556002546001600160a01b031663d5fa2b006104ec84610294565b836040518363ffffffff1660e01b815260040180838152602001826001600160a01b03166001600160a01b0316815260200192505050600060405180830381600087803b15801561053c57600080fd5b505af1158015610550573d6000803e3d6000fd5b505050505050565b610630806105668339019056fe608060405234801561001057600080fd5b50600080546001600160a01b031916331790556105fe806100326000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80633b3b57de146100515780638b95dd711461008a578063d5fa2b001461013e578063f1cb7e061461016a575b600080fd5b61006e6004803603602081101561006757600080fd5b5035610202565b604080516001600160a01b039092168252519081900360200190f35b61013c600480360360608110156100a057600080fd5b8135916020810135918101906060810160408201356401000000008111156100c757600080fd5b8201836020820111156100d957600080fd5b803590602001918460018302840111640100000000831117156100fb57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250929550610239945050505050565b005b61013c6004803603604081101561015457600080fd5b50803590602001356001600160a01b03166103a2565b61018d6004803603604081101561018057600080fd5b5080359060200135610404565b6040805160208082528351818301528351919283929083019185019080838360005b838110156101c75781810151838201526020016101af565b50505050905090810190601f1680156101f45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6000606061021183603c610404565b9050805160001415610227576000915050610234565b610230816104ad565b9150505b919050565b6102416104ee565b610283576040805162461bcd60e51b815260206004820152600e60248201526d1b9bdd0b585d5d1a1bdc9a5cd95960921b604482015290519081900360640190fd5b827f65412581168e88a1e60c6459d7f44ae83ad0832e670826c05a4e2476b57af75283836040518083815260200180602001828103825283818151815260200191508051906020019080838360005b838110156102ea5781810151838201526020016102d2565b50505050905090810190601f1680156103175780820380516001836020036101000a031916815260200191505b50935050505060405180910390a2603c82141561037557827f52d7d861f09ab3d26239d492e8968629f95e9e318cf0b73bfddc441522a15fd2610359836104ad565b604080516001600160a01b039092168252519081900360200190a25b60008381526001602090815260408083208584528252909120825161039c92840190610530565b50505050565b6103aa6104ee565b6103ec576040805162461bcd60e51b815260206004820152600e60248201526d1b9bdd0b585d5d1a1bdc9a5cd95960921b604482015290519081900360640190fd5b61040082603c6103fb84610500565b610239565b5050565b600082815260016020818152604080842085855282529283902080548451600294821615610100026000190190911693909304601f810183900483028401830190945283835260609390918301828280156104a05780601f10610475576101008083540402835291602001916104a0565b820191906000526020600020905b81548152906001019060200180831161048357829003601f168201915b5050505050905092915050565b600081516014146104df576040805162461bcd60e51b8152602060048201526000602482015290519081900360640190fd5b5060200151600160601b900490565b6000546001600160a01b031633145b90565b604080516014808252818301909252606091602082018180368337505050600160601b9290920260208301525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061057157805160ff191683800117855561059e565b8280016001018555821561059e579182015b8281111561059e578251825591602001919060010190610583565b506105aa9291506105ae565b5090565b6104fd91905b808211156105aa57600081556001016105b456fea26469706673582212200907daf25c34267c5ca4eb20442505ab03ab80dd2a1d73e71f0e48e2a877b21564736f6c63430006080033a26469706673582212207da45da9cc491ee90fbce730fa1ffbc395e2dd3ded77caa952eee535a1fa883e64736f6c63430006080033",
+  "libraries": {},
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3434,
+        "contract": "contracts/core/mocks/ENSGatewayMock.sol:ENSGatewayMock",
+        "label": "initialized",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 3436,
+        "contract": "contracts/core/mocks/ENSGatewayMock.sol:ENSGatewayMock",
+        "label": "initializing",
+        "offset": 1,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 3767,
+        "contract": "contracts/core/mocks/ENSGatewayMock.sol:ENSGatewayMock",
+        "label": "_owners",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_bytes32,t_address)"
+      },
+      {
+        "astId": 3769,
+        "contract": "contracts/core/mocks/ENSGatewayMock.sol:ENSGatewayMock",
+        "label": "_resolver",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_contract(AddrResolverMock)3754"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_contract(AddrResolverMock)3754": {
+        "encoding": "inplace",
+        "label": "contract AddrResolverMock",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_bytes32,t_address)": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => address)",
+        "numberOfBytes": "32",
+        "value": "t_address"
+      }
+    }
+  },
+  "gasEstimates": {
+    "creation": {
+      "codeDepositCost": "603800",
+      "executionCost": "638",
+      "totalCost": "604438"
+    },
+    "external": {
+      "ens()": "308",
+      "initialize(address)": "infinite",
+      "initialized()": "1055",
+      "ownerOfSubdomain(bytes32)": "1145",
+      "registerSubdomain(bytes32,address)": "infinite",
+      "resolver()": "220",
+      "resolverOfSubdomain(bytes32)": "1147",
+      "subdomainNode(bytes32)": "461",
+      "tld()": "infinite",
+      "tldNode()": "221"
+    }
+  }
+}
